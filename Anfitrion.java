@@ -1,10 +1,14 @@
 public class Anfitrion extends Usuario {
-    
-    public void gestionarPropiedad() {
-        System.out.println("Accediendo a la gestión de propiedad...");
+
+    public Anfitrion(String id, String nombre, String correo) {
+        super(id, nombre, correo);
     }
-    
+
+    public void gestionarPropiedad() {
+        System.out.println("El anfitrión está gestionando la propiedad.");
+    }
+
     public void atenderIncidente() {
-        System.out.println("Abriendo panel de atención de incidentes...");
+        System.out.println("El anfitrión está atendiendo el incidente.");
     }
 }
